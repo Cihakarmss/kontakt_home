@@ -1,8 +1,6 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
-
-
-
 
 function Nav() {
   return (
@@ -10,17 +8,21 @@ function Nav() {
       <nav>
         <div>
           <div className="logo_header">
-            <Image
-              src="./logo_kontakt.svg"
-              alt="Kontakt Logo"
-              width={155}
-              height={34.31}
-            />
+            <Link href="/">
+              <Image
+                src="./logo_kontakt.svg"
+                alt="Kontakt Logo"
+                width={155}
+                height={34.31}
+              />
+            </Link>
           </div>
 
           <ul>
-            
-           
+            <li>
+              <a href="/Trade-in">Trade-in</a>
+            </li>
+
             <li>
               <a href="/magazalar">Mağazalar</a>
             </li>
