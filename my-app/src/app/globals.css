@@ -1,0 +1,278 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navigation container */
+nav {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav > div {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  gap: 20px;
+}
+
+/* Logo section */
+.logo_header {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.logo_header img {
+  height: 32px;
+  width: auto;
+}
+
+/* Navigation links */
+ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 30px;
+  flex: 1;
+  justify-content: center;
+  margin: 0 20px;
+}
+
+ul li {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  white-space: nowrap;
+}
+
+ul li a {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 400;
+  color: #374151;
+  transition: color 0.2s ease;
+}
+
+ul li a:hover {
+  color: #111827;
+}
+
+/* Trade-in link special styling */
+ul li:first-child a {
+  color: #ef4444;
+  font-weight: 500;
+}
+
+ul li:first-child a:hover {
+  color: #dc2626;
+}
+
+/* Phone number styling */
+ul li:last-child {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+ul li:last-child span {
+  color: #ef4444;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+ul li:last-child a {
+  color: #111827;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/* Profile buttons section */
+.profInfo_buttons {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-shrink: 0;
+}
+
+.profInfo_buttons button {
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+
+/* Monthly payment button */
+.ayliq {
+  background-color: #22c55e;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+
+.ayliq:hover {
+  background-color: #16a34a;
+}
+
+/* Login button */
+.register {
+  background: none;
+  color: #374151;
+  padding: 8px 12px;
+}
+
+.register:hover {
+  color: #111827;
+}
+
+/* Language selector dropdown */
+.language-selector {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.language-selector > div:first-child {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 6px 12px;
+  background-color: #f3f4f6;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #111827;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.language-selector > div:first-child:hover {
+  background-color: #e5e7eb;
+}
+
+.icon-chevron-down {
+  width: 12px;
+  height: 12px;
+  border-right: 2px solid #6b7280;
+  border-bottom: 2px solid #6b7280;
+  transform: rotate(45deg);
+  transition: transform 0.2s ease;
+}
+
+.language-selector:hover .icon-chevron-down {
+  transform: rotate(225deg);
+}
+
+.language_items {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-4px);
+  transition: all 0.2s ease;
+  z-index: 1000;
+  min-width: 60px;
+}
+
+.language-selector:hover .language_items {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.language_items div {
+  padding: 8px 12px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #6b7280;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.language_items div:hover {
+  background-color: #f9fafb;
+  color: #111827;
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+  nav > div {
+    padding: 0 16px;
+  }
+  
+  ul {
+    gap: 20px;
+    margin: 0 16px;
+  }
+  
+  .profInfo_buttons {
+    gap: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  nav > div {
+    height: 60px;
+    gap: 16px;
+  }
+  
+  ul {
+    gap: 16px;
+    margin: 0 12px;
+  }
+  
+  ul li a {
+    font-size: 13px;
+  }
+  
+  .profInfo_buttons {
+    gap: 8px;
+  }
+  
+  .profInfo_buttons button {
+    font-size: 13px;
+    padding: 6px 12px;
+  }
+  
+  .ayliq {
+    padding: 6px 12px;
+  }
+}
+
+@media (max-width: 640px) {
+  ul {
+    display: none;
+  }
+  
+  nav > div {
+    justify-content: space-between;
+  }
+  
+  .profInfo_buttons {
+    gap: 8px;
+  }
+  
+  .profInfo_buttons button {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+}
