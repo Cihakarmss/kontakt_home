@@ -2,19 +2,31 @@
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import sliderData from "@/data/headslideData";
-
+import headslideData from "@/data/headslideData";
+import Image from "next/image";
+import { Autoplay,Navigation } from "swiper/modules";
 
 export default function HeaderSlider() {
   return (
-    <Swiper loop={true}>
-      {sliderData && sliderData.map((slide) => (
-        <SwiperSlide key={slide.id}>
-          <div className="slide">
-            <img src={slide.image} alt={`Slide ${slide.id}`} />
-          </div>
-        </SwiperSlide>
-      ))}
+    <Swiper modules={[Autoplay,Navigation]} 
+    loop={true}
+      autoplay={{
+        delay: 3000,
+        disableOnInteraction: false,
+      }}
+      navigation={true}>
+      {headslideData &&
+        headslideData.map((slide) => (
+          <SwiperSlide key={slide.id}>
+            <Image
+              src={slide.image} 
+              alt={slide.title}
+              width={1000}
+              height={565}
+            
+            />
+          </SwiperSlide>
+        ))}
     </Swiper>
   );
 }

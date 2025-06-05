@@ -1,31 +1,31 @@
 // src/data/headslideData.js
 
-const sliderData = [
+const headslideData = [
   {
     id: 1,
-    image:
-      "https://kontakt.az/media/dinarys/banner/images/19.05_soyuducu_haffman_esas_az_1.jpg",
+    image: "/hofman.jpg", // ✅ düzgün yol
+    title: "Hofman",
   },
   {
     id: 2,
-
-    image:
-      "https://kontakt.az/media/dinarys/banner/images/19.05_soyuducu_haffman_esas_az_1.jpg",
+    image: "/SuperGunler2470Rus_1-243e9554.webp",
+    title: "Hofman",
   },
   {
     id: 3,
-
-    image: "/images/oppo-slider.jpg",
+    image: "/hofman.jpg",
+    title: "Hofman",
   },
   {
     id: 4,
-    image: "/images/samsung-slider.jpg",
+    image: "/hofman.jpg",
+    title: "Hofman",
   },
   {
     id: 5,
-
-    image: "/images/xiaomi-slider.jpg",
+    image: "/hofman.jpg",
+    title: "Hofman",
   },
 ];
 
-export default sliderData;
+export default headslideData;
