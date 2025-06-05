@@ -7,6 +7,7 @@ import Image from "next/image";
 import { Autoplay,Navigation } from "swiper/modules";
 
 export default function HeaderSlider() {
+  
   return (
     <Swiper modules={[Autoplay,Navigation]} 
     loop={true}
@@ -21,7 +22,7 @@ export default function HeaderSlider() {
             <Image
               src={slide.image} 
               alt={slide.title}
-              width={1000}
+              width={755}
               height={565}
             
             />
