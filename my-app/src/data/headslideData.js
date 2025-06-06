@@ -1,8 +1,26 @@
-
-
 const headslideData = [
   {
     id: 1,
+    image: "/hofman.jpg", // ✅ düzgün yol
+    title: "Hofman",
+  },
+  {
+    id: 6,
+    image: "/hofman.jpg", // ✅ düzgün yol
+    title: "Hofman",
+  },
+  {
+    id: 7,
+    image: "/hofman.jpg", // ✅ düzgün yol
+    title: "Hofman",
+  },
+  {
+    id: 8,
+    image: "/hofman.jpg", // ✅ düzgün yol
+    title: "Hofman",
+  },
+  {
+    id: 9,
     image: "/hofman.jpg", // ✅ düzgün yol
     title: "Hofman",
   },
@@ -23,7 +41,8 @@ const headslideData = [
   },
   {
     id: 5,
-    image: "/KH_2025_Advertising_-Single-post_samsung-trade-in_1080x1080_az_1__1-5a930e0d.webp",
+    image:
+      "/KH_2025_Advertising_-Single-post_samsung-trade-in_1080x1080_az_1__1-5a930e0d.webp",
     title: "Hofman",
   },
 ];
