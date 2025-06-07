@@ -7,9 +7,11 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <main>
+          
           <Nav />
           {children}
           <Footer />
+          
         </main>
       </body>
     </html>

@@ -34,6 +34,7 @@ function Nav() {
               <a href="tel:6060">6060</a>
             </li>
           </ul>
+          <div className="right-nav">
 
           <div className="profInfo_buttons">
             <button className="ayliq">Aylıq Ödəniş</button>
@@ -47,6 +48,7 @@ function Nav() {
             <div className="language_items">
               <div>RU</div>
             </div>
+          </div>
           </div>
         </div>
       </nav>

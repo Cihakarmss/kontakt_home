@@ -26,7 +26,7 @@ export default function HeaderSlider() {
               <Image
                 src={slide.image || "/placeholder.svg"}
                 alt={slide.title}
-                width={755}
+                width={565}
                 height={565}
                 className="header-slide-image"
               />

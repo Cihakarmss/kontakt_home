@@ -23,11 +23,15 @@ function WeeklyCards() {
                 <Image
                   src={card.image || "/placeholder.svg"}
                   alt={card.title}
-                  width={200}
+                  width={267}
                   height={200}
                   className="weekly-card-image"
                 />
+                <button>Sebete at  </button>
+
+
               </div>
+
             </SwiperSlide>
           ))}
       </Swiper>

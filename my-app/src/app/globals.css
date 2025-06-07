@@ -4,6 +4,17 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f9fafb; /* Light gray background */
+  color: #374151; /* Dark gray text */
+  line-height: 1.6;
+}
+.container {
+  max-width: 1519px;
+  margin: 0 40px;
+  padding: 20px;
+}
 
 /* Navigation container */
 nav {
@@ -13,16 +24,23 @@ nav {
   position: sticky;
   top: 0;
   z-index: 1000;
+  width: 100%;
 }
 
 nav > div {
+  width: 100%;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 0 40px;
   padding: 0 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 70px;
+  gap: 20px;
+}
+.right-nav{
+  display: flex;
+  align-items: center;
   gap: 20px;
 }
 
@@ -46,7 +64,7 @@ ul {
   gap: 30px;
   flex: 1;
   justify-content: center;
-  margin: 0 20px;
+  margin: 0 0 0 120px;
 }
 
 ul li {
@@ -224,49 +242,92 @@ ul li:last-child a {
 }
 
 /* Sidebar (kategoriya menyusu) */
-.sidebar {
-  width: 360px;
-  flex-shrink: 0;
-  background-color: #ffffff;
-  border-radius: 10px;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
-  padding: 10px 0;
+.sidebar-container {
+  position: relative;
+  display: flex;
 }
 
-/* Sidebar navigation */
+.sidebar {
+  width: 260px;
+  background-color: #fff;
+  border-right: 1px solid #ddd;
+  height: 100vh; 
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
 .sidebar-nav {
   display: flex;
   flex-direction: column;
 }
 
-.nav-item {
+.sidebar-item {
+  position: relative;
+}
+
+.nav-link {
   display: flex;
   align-items: center;
-  padding: 12px 20px;
-  text-decoration: none;
+  padding: 12px 16px;
   color: #333;
-  font-weight: 500;
-  transition: background 0.3s ease;
+  text-decoration: none;
+  transition: background 0.2s;
 }
 
-.nav-item:hover {
-  background-color: #f5f5f5;
-}
-
-.nav-item-active {
-  background-color: #e6f0ff;
+.nav-link:hover {
+  background-color: #f2f8ff;
   color: #007aff;
-  font-weight: 600;
 }
 
-.nav-icon {
-  margin-right: 10px;
-  font-size: 18px;
+.submenu-panel {
+  display: flex;             /* Sütunları yan-yana qoymaq üçün flex */
+  gap: 20px;                 /* Sütunlar arası məsafə */
+  background: #f9f9f9;
+  padding: 20px;
+  border: 1px solid #ddd;
+  position: fixed;
+  top: 0;
+  left: 250px;    /* sidebar-ın eni qədər sola yerdəyişmə */
+  width: calc(100vw - 250px); /* qalan ekran eni */
+  height: 100vh;
+  background-color: rgba(248, 244, 244, 0.8); /* istəyə bağlı rəng */
+  z-index: 9999;
 }
 
-.nav-text {
-  flex-grow: 1;
+.submenu-column {
+  flex: 1;                   /* Hər sütun eyni genişlikdə */
+  display: flex;
+  flex-direction: column;    /* Sütun içi elementləri yuxarıdan aşağıya sıralayır */
+  gap: 10px;
 }
+
+.submenu-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #222;
+}
+
+.submenu-list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.submenu-item {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 6px;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.submenu-item:hover {
+  color: #007aff;
+}
+
 
 /* Swiper slayder */
 .swiper {
@@ -466,7 +527,7 @@ body {
 /* Header Slider Styles */
 .header-slider-container {
   width: 100%;
-  max-width: 755px;
+  max-width: 615px;
   margin: 0 auto;
 }
 
@@ -574,6 +635,7 @@ body {
 .weekly-card {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
   padding: 10px;
 }
@@ -587,12 +649,13 @@ body {
 /* Hero Section Layout */
 .hero-section {
   display: grid;
-  grid-template-columns: 250px 1fr;
+  grid-template-columns: 250px 1fr ;
   gap: 20px;
 }
 
 .weeksell-section {
   margin-top: 20px;
+  
 }
 
 .weeksell-title {
@@ -609,3 +672,43 @@ body {
     @apply bg-background text-foreground;
   }
 }
+.main-content{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.weekly-card button {
+  background-color: #e91e63;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.featurescard-container {
+   display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  
+  padding: 20px;
+  box-sizing: border-box;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  align-items: stretch;
+
+  
+}
+.featurescard {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  min-width: calc(33.333% - 20px);
+}
+
