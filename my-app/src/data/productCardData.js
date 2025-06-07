@@ -1,0 +1,364 @@
+const electronics = [
+  // Telefonlar - 8 ədəd
+  {
+    id: 1,
+    name: "iPhone 15 Pro Max 256GB Təbii Titan",
+    category: "telefon",
+    originalPrice: "4299₼",
+    discountPrice: "3899₼",
+    discount: "-9%",
+    installment: "0% 12 ay",
+    stock: "2 sat / 0Qh",
+    image: "/iphone15.webp"
+  },
+  {
+    id: 2,
+    name: "Samsung Galaxy S24 Ultra 256GB Qara",
+    category: "telefon", 
+    originalPrice: "3799₼",
+    discountPrice: "3299₼",
+    discount: "-13%",
+    installment: "0% 6 ay",
+    stock: "2 sat / 0Qh",
+    image: "/samsunga56.webp"
+  },
+  {
+    id: 3,
+    name: "Xiaomi Redmi Note 13 Pro 256GB",
+    category: "telefon",
+    originalPrice: "799₼",
+    discountPrice: "679₼",
+    discount: "-15%",
+    installment: "0% 6 ay",
+    stock: "2 sat / 0Qh",
+    image: "/xiominote13.webp"
+  },
+  {
+    id: 4,
+    name: "iPhone 14 128GB Mavi",
+    category: "telefon",
+    originalPrice: "2799₼",
+    discountPrice: "2399₼",
+    discount: "-14%",
+    installment: "0% 12 ay",
+    stock: "2 sat / 0Qh",
+    image: "/iphone14.webp"
+  },
+  {
+    id: 5,
+    name: "Google Pixel 8 128GB Obsidian",
+    category: "telefon",
+    originalPrice: "1999₼",
+    discountPrice: "1749₼",
+    discount: "-13%",
+    installment: "0% 9 ay",
+    stock: "2 sat / 0Qh",
+    image: "/samsung36.webp"
+  },
+  {
+    id: 6,
+    name: "OnePlus 11 256GB Qara",
+    category: "telefon",
+    originalPrice: "1899₼",
+    discountPrice: "1599₼",
+    discount: "-16%",
+    installment: "0% 9 ay",
+    stock: "2 sat / 0Qh",
+    image: "/samsunga16.webp"
+  },
+  {
+    id: 7,
+    name: "Huawei P60 Pro 256GB Qızılı",
+    category: "telefon",
+    originalPrice: "2299₼",
+    discountPrice: "1949₼",
+    discount: "-15%",
+    installment: "0% 12 ay",
+    stock: "2 sat / 0Qh",
+    image: "/xiominote13.webp"
+  },
+  {
+    id: 8,
+    name: "Oppo Find X6 Pro 512GB",
+    category: "telefon",
+    originalPrice: "2599₼",
+    discountPrice: "2199₼",
+    discount: "-15%",
+    installment: "0% 12 ay",
+    stock: "2 sat / 0Qh",
+    image: "/iphone15.webp"
+  },
+
+  // Bilgisayarlar - 8 ədəd
+  {
+    id: 9,
+    name: "MacBook Pro 14 M3 Pro 512GB Gümüşü",
+    category: "bilgisayar",
+    originalPrice: "6899₼", 
+    discountPrice: "6299₼",
+    discount: "-9%",
+    installment: "0% 18 ay",
+    stock: "2 sat / 0Qh",
+    image: "/samsuna36.webp"
+  },
+  {
+    id: 10,
+    name: "HP Pavilion Gaming 15 RTX 4060",
+    category: "bilgisayar",
+    originalPrice: "2899₼",
+    discountPrice: "2499₼", 
+    discount: "-14%",
+    installment: "0% 12 ay",
+    stock: "2 sat / 0Qh",
+    image: "/iphone14.webp"
+  },
+  {
+    id: 11,
+    name: "ASUS ROG Strix G15 RTX 4070",
+    category: "bilgisayar",
+    originalPrice: "3999₼",
+    discountPrice: "3499₼",
+    discount: "-13%",
+    installment: "0% 15 ay",
+    stock: "2 sat / 0Qh",
+    image: "/samsunga56.webp"
+  },
+  {
+    id: 12,
+    name: "Dell XPS 13 Plus Intel i7 512GB",
+    category: "bilgisayar",
+    originalPrice: "4299₼",
+    discountPrice: "3799₼",
+    discount: "-12%",
+    installment: "0% 18 ay", 
+    stock: "2 sat / 0Qh",
+    image: "/xiominote13.webp"
+  },
+  {
+    id: 13,
+    name: "Lenovo ThinkPad E15 i5 256GB SSD",
+    category: "bilgisayar", 
+    originalPrice: "1899₼",
+    discountPrice: "1599₼",
+    discount: "-16%",
+    installment: "0% 12 ay",
+    stock: "2 sat / 0Qh",
+    image: "/iphone15.webp"
+  },
+  {
+    id: 14,
+    name: "Acer Nitro 5 RTX 3060 512GB",
+    category: "bilgisayar",
+    originalPrice: "2599₼",
+    discountPrice: "2199₼",
+    discount: "-15%",
+    installment: "0% 12 ay",
+    stock: "2 sat / 0Qh",
+    image: "/samsunga16.webp"
+  },
+  {
+    id: 15,
+    name: "MSI GF63 Thin i7 RTX 4050",
+    category: "bilgisayar",
+    originalPrice: "2299₼",
+    discountPrice: "1949₼",
+    discount: "-15%",
+    installment: "0% 12 ay",
+    stock: "2 sat / 0Qh",
+    image: "/samsung36.webp"
+  },
+  {
+    id: 16,
+    name: "Surface Laptop 5 i7 512GB",
+    category: "bilgisayar",
+    originalPrice: "3499₼",
+    discountPrice: "2999₼",
+    discount: "-14%",
+    installment: "0% 15 ay",
+    stock: "2 sat / 0Qh",
+    image: "/iphone14.webp"
+  },
+
+  // Qulaqlıqlar - 8 ədəd
+  {
+    id: 17,
+    name: "AirPods Pro 2nd Gen USB-C",
+    category: "qulaqlıq",
+    originalPrice: "749₼",
+    discountPrice: "649₼",
+    discount: "-13%",
+    installment: "0% 6 ay", 
+    stock: "2 sat / 0Qh",
+    image: "/samsunga56.webp"
+  },
+  {
+    id: 18,
+    name: "Sony WH-1000XM5 Qara",
+    category: "qulaqlıq",
+    originalPrice: "899₼",
+    discountPrice: "759₼",
+    discount: "-16%",
+    installment: "0% 6 ay",
+    stock: "2 sat / 0Qh",
+    image: "/xiominote13.webp"
+  },
+  {
+    id: 19,
+    name: "JBL Tune 770NC Simsiz Qulaqlıq",
+    category: "qulaqlıq",
+    originalPrice: "299₼",
+    discountPrice: "249₼", 
+    discount: "-17%",
+    installment: "0% 3 ay",
+    stock: "2 sat / 0Qh",
+    image: "/iphone15.webp"
+  },
+  {
+    id: 20,
+    name: "Bose QuietComfort 45 Qulaqlıq",
+    category: "qulaqlıq",
+    originalPrice: "899₼",
+    discountPrice: "749₼",
+    discount: "-17%",
+    installment: "0% 6 ay",
+    stock: "2 sat / 0Qh",
+    image: "/samsung36.webp"
+  },
+  {
+    id: 21,
+    name: "Marshall Major IV Simsiz Qulaqlıq",
+    category: "qulaqlıq",
+    originalPrice: "399₼",
+    discountPrice: "329₼",
+    discount: "-18%",
+    installment: "0% 3 ay",
+    stock: "2 sat / 0Qh",
+    image: "/samsunga16.webp"
+  },
+  {
+    id: 22,
+    name: "Sennheiser HD 450BT Bluetooth",
+    category: "qulaqlıq",
+    originalPrice: "549₼",
+    discountPrice: "459₼",
+    discount: "-16%",
+    installment: "0% 6 ay",
+    stock: "2 sat / 0Qh",
+    image: "/iphone14.webp"
+  },
+  {
+    id: 23,
+    name: "Beats Studio3 Wireless",
+    category: "qulaqlıq",
+    originalPrice: "799₼",
+    discountPrice: "679₼",
+    discount: "-15%",
+    installment: "0% 6 ay",
+    stock: "2 sat / 0Qh",
+    image: "/samsunga56.webp"
+  },
+  {
+    id: 24,
+    name: "Audio-Technica ATH-M50xBT2",
+    category: "qulaqlıq",
+    originalPrice: "649₼",
+    discountPrice: "549₼",
+    discount: "-15%",
+    installment: "0% 6 ay",
+    stock: "2 sat / 0Qh",
+    image: "/xiominote13.webp"
+  },
+
+  // Ağıllı saatlar - 8 ədəd
+  {
+    id: 25,
+    name: "Apple Watch Series 9 45mm GPS",
+    category: "ağıllı saat", 
+    originalPrice: "1299₼",
+    discountPrice: "1149₼",
+    discount: "-12%",
+    installment: "0% 9 ay",
+    stock: "2 sat / 0Qh",
+    image: "/iphone15.webp"
+  },
+  {
+    id: 26,
+    name: "Samsung Galaxy Watch 6 Classic 47mm",
+    category: "ağıllı saat",
+    originalPrice: "899₼",
+    discountPrice: "769₼",
+    discount: "-14%", 
+    installment: "0% 6 ay",
+    stock: "2 sat / 0Qh",
+    image: "/samsung36.webp"
+  },
+  {
+    id: 27,
+    name: "Huawei Watch GT 4 46mm",
+    category: "ağıllı saat",
+    originalPrice: "649₼",
+    discountPrice: "549₼",
+    discount: "-15%",
+    installment: "0% 6 ay",
+    stock: "2 sat / 0Qh",
+    image: "/samsunga16.webp"
+  },
+  {
+    id: 28,
+    name: "Garmin Venu 3 Ağıllı Saat",
+    category: "ağıllı saat",
+    originalPrice: "1299₼",
+    discountPrice: "1099₼",
+    discount: "-15%",
+    installment: "0% 9 ay",
+    stock: "2 sat / 0Qh",
+    image: "/iphone14.webp"
+  },
+  {
+    id: 29,
+    name: "Amazfit GTR 4 Ağıllı Saat 46mm",
+    category: "ağıllı saat",
+    originalPrice: "549₼",
+    discountPrice: "449₼",
+    discount: "-18%",
+    installment: "0% 6 ay",
+    stock: "2 sat / 0Qh",
+    image: "/samsunga56.webp"
+  },
+  {
+    id: 30,
+    name: "Fitbit Versa 4 Fitness Saat",
+    category: "ağıllı saat",
+    originalPrice: "799₼",
+    discountPrice: "679₼",
+    discount: "-15%",
+    installment: "0% 6 ay",
+    stock: "2 sat / 0Qh",
+    image: "/xiominote13.webp"
+  },
+  {
+    id: 31,
+    name: "Xiaomi Watch S1 Pro 47mm",
+    category: "ağıllı saat",
+    originalPrice: "599₼",
+    discountPrice: "499₼",
+    discount: "-17%",
+    installment: "0% 6 ay",
+    stock: "2 sat / 0Qh",
+    image: "/iphone15.webp"
+  },
+  {
+    id: 32,
+    name: "Fossil Gen 6 Wellness Edition",
+    category: "ağıllı saat",
+    originalPrice: "699₼",
+    discountPrice: "589₼",
+    discount: "-16%",
+    installment: "0% 6 ay",
+    stock: "2 sat / 0Qh",
+    image: "/samsung36.webp"
+  }
+];
+
+
+export default electronics;

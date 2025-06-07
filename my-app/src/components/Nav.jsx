@@ -35,20 +35,19 @@ function Nav() {
             </li>
           </ul>
           <div className="right-nav">
-
-          <div className="profInfo_buttons">
-            <button className="ayliq">Aylıq Ödəniş</button>
-            <button className="register">Daxil ol</button>
-          </div>
-
-          <div className="language-selector">
-            <div>
-              AZ <div className="icon-chevron-down"></div>
+            <div className="profInfo_buttons">
+              <button className="ayliq">Aylıq Ödəniş</button>
+              <button className="register">Daxil ol</button>
             </div>
-            <div className="language_items">
-              <div>RU</div>
+
+            <div className="language-selector">
+              <div>
+                AZ <div className="icon-chevron-down"></div>
+              </div>
+              <div className="language_items">
+                <div>RU</div>
+              </div>
             </div>
-          </div>
           </div>
         </div>
       </nav>

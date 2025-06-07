@@ -1,8 +1,8 @@
 "use client";
 
-import React, { useState } from 'react';
-import Link from 'next/link';
-import menuData from '@/data/menuData'; // bu, əvvəlki cavabda yazdığım 12 kateqoriyalı fayldır
+import React, { useState } from "react";
+import Link from "next/link";
+import menuData from "@/data/menuData";
 
 export default function Sidebar() {
   const [hoveredCategory, setHoveredCategory] = useState(null);
@@ -23,19 +23,22 @@ export default function Sidebar() {
                 <span className="nav-text">{category.name}</span>
               </Link>
 
-              {/* Hoverdə açılan submenu panel */}
               {hoveredCategory === category.id && category.submenu && (
                 <div className="submenu-panel">
-                  {Object.entries(category.submenu).map(([title, items], idx) => (
-                    <div key={idx} className="submenu-column">
-                      <h4 className="submenu-title">{title}</h4>
-                      <ul className="submenu-list">
-                        {items.map((item, i) => (
-                          <li key={i} className="submenu-item">{item}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  ))}
+                  {Object.entries(category.submenu).map(
+                    ([title, items], idx) => (
+                      <div key={idx} className="submenu-column">
+                        <h4 className="submenu-title">{title}</h4>
+                        <ul className="submenu-list">
+                          {items.map((item, i) => (
+                            <li key={i} className="submenu-item">
+                              {item}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )
+                  )}
                 </div>
               )}
             </div>

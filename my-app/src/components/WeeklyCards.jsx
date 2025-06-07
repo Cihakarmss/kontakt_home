@@ -27,11 +27,8 @@ function WeeklyCards() {
                   height={200}
                   className="weekly-card-image"
                 />
-                <button>Sebete at  </button>
-
-
+                <button>Sebete at </button>
               </div>
-
             </SwiperSlide>
           ))}
       </Swiper>

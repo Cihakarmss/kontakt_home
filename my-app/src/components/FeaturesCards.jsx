@@ -1,21 +1,25 @@
 import featuresData from "@/data/featuresData";
+import Image from "next/image";
 import React from "react";
 
 function FeaturesCards() {
   return (
-    <div>
+    <div className="featurescard-container">
       {featuresData &&
         featuresData.map((feature) => (
           <div key={feature.id} className="featurescard">
-            <div className="featurescard-image">
-              <img
-                src={feature.image || "/placeholder.svg"}
+            <div className="icon">
+              <Image
+                src={feature.icon}
                 alt={feature.title}
+                width={50}
+                height={50}
+                style={{ backgroundColor: feature.iconColor }}
               />
             </div>
-            <div className="featurescard-content">
-              <h3>{feature.title}</h3>
-              <p>{feature.description}</p>
+            <div className="content">
+              <div className="title">{feature.title}</div>
+              <div className="description">{feature.description}</div>
             </div>
           </div>
         ))}
