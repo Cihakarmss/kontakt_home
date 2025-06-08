@@ -3,8 +3,9 @@ import HeaderSlider from "@/components/HeaderSlider";
 import Weeksell from "@/components/Weeksell";
 import FeaturesCards from "@/components/FeaturesCards";
 import "./globals.css"; // Global CSS dosyasını import edin
-import CardSatisliderleri from "@/components/CardSatisliderleri";
+
 import { ProductProvider } from "@/hooks/ProductContext";
+import ProductCards from "@/components/ProductCards";
 
 export default function Home() {
   return (
@@ -24,8 +25,22 @@ export default function Home() {
           <div />
 
           <div className="product-section">
-            <CardSatisliderleri />
+            <ProductCards
+            title={"Satış liderləri"} 
+            />
           </div>
+          <div className="product-section">
+            <ProductCards
+            title={"Sevindirən təkliflər"} 
+            />
+            </div>
+          <div className="product-section">
+            <ProductCards
+            title={"Mövsüm təklifləri"} 
+            />
+            </div> 
+          
+          
         </div>
       </div>
     </ProductProvider>

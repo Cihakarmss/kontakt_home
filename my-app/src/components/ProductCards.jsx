@@ -6,15 +6,16 @@ import { useProduct } from "@/hooks/ProductContext";
 
 import Image from "next/image";
 
-function CardSatisliderleri() {
-  const { filteredProducts } = useProduct();
+function ProductCards({title}) {
 
+  const { filteredProducts } = useProduct();
+  
   return (
     <div>
       <div className="card-satisliderleri-container">
         <div className="card-satisliderleri">
           <div className="card-satisliderleri-header">
-            <h2>Satış liderleri</h2>
+            <h2>{title}</h2>
             <Filterbtn />
           </div>
 
@@ -43,4 +44,4 @@ function CardSatisliderleri() {
   );
 }
 
-export default CardSatisliderleri;
+export default ProductCards;
