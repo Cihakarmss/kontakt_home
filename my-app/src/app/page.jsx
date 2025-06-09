@@ -2,7 +2,7 @@ import Sidebar from "@/components/Sidebar";
 import HeaderSlider from "@/components/HeaderSlider";
 import Weeksell from "@/components/Weeksell";
 import FeaturesCards from "@/components/FeaturesCards";
-import "./globals.css"; // Global CSS dosyasını import edin
+import "./globals.css";
 
 import { ProductProvider } from "@/hooks/ProductContext";
 import ProductCards from "@/components/ProductCards";
@@ -25,22 +25,14 @@ export default function Home() {
           <div />
 
           <div className="product-section">
-            <ProductCards
-            title={"Satış liderləri"} 
-            />
+            <ProductCards title={"Satış liderləri"} />
           </div>
           <div className="product-section">
-            <ProductCards
-            title={"Sevindirən təkliflər"} 
-            />
-            </div>
+            <ProductCards title={"Sevindirən təkliflər"} />
+          </div>
           <div className="product-section">
-            <ProductCards
-            title={"Mövsüm təklifləri"} 
-            />
-            </div> 
-          
-          
+            <ProductCards title={"Mövsüm təklifləri"} />
+          </div>
         </div>
       </div>
     </ProductProvider>

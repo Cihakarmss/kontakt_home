@@ -1,9 +1,7 @@
-
-
 const weeklycardData = [
   {
     id: 1,
-    image: "/matebook.png", 
+    image: "/matebook.png",
     title: "Hofman",
   },
   {
@@ -16,7 +14,6 @@ const weeklycardData = [
     image: "/ayanmobilya.png",
     title: "Hofman",
   },
-  
 ];
 
 export default weeklycardData;

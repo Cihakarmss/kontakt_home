@@ -315,7 +315,6 @@ ul li:last-child a {
   color: #007aff;
 }
 
-/* Swiper slayder */
 .swiper {
   flex-grow: 1;
   border-radius: 10px;
@@ -343,7 +342,7 @@ ul li:last-child a {
 
 .product-header {
   display: flex;
-  
+
   align-items: center;
   margin-bottom: 15px;
 }
@@ -658,20 +657,16 @@ body {
 }
 
 .card-satisliderleri-header {
-  
-  
-  
   margin-bottom: 24px;
 }
 .filter-btn-container {
   display: flex;
   gap: 10px;
- 
-  
+
   align-items: center;
   margin-bottom: 16px;
 }
-.filter-btn{
+.filter-btn {
   background: #eaeaea;
   color: #4b5563;
   border: none;
@@ -680,7 +675,6 @@ body {
   font-size: 14px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-
 }
 .filter-btn:hover {
   background: #1f2937;
@@ -958,7 +952,6 @@ body {
   width: 100%;
 }
 
-
 .footer-link-item {
   margin-bottom: 8px;
 }
@@ -976,7 +969,6 @@ body {
   color: #333;
 }
 
-/* Contact Info Styles */
 .footer-contact-info {
   margin-bottom: 25px;
   width: 100%;
@@ -1004,22 +996,17 @@ body {
   margin: 0;
   display: flex;
   align-items: center;
-  
 }
 .footer-location a {
   color: #666666 !important;
   text-decoration: none;
   transition: color 0.2s ease;
   border: solid 1px #e5e5e5;
-  
-
-  
 }
 .footer-location a:hover {
   color: #333;
   text-decoration: none;
   background-color: #f2f2f2;
-  
 }
 
 .footer-location::before {
@@ -1027,7 +1014,6 @@ body {
   margin-right: 8px;
 }
 
-/* Social Media Section */
 .footer-social {
   margin-bottom: 30px;
   width: 100%;
@@ -1039,7 +1025,6 @@ body {
   margin-bottom: 12px;
   font-weight: 500;
   text-align: left;
-
 }
 
 .footer-social .footer-links {
@@ -1071,7 +1056,6 @@ body {
   border-color: #333;
 }
 
-/* Payment Methods */
 .footer-payments {
   margin-top: 20px;
   width: 100%;
@@ -1110,7 +1094,6 @@ body {
   object-fit: contain;
 }
 
-/* Copyright */
 .footer-copyright {
   text-align: center;
   color: #666666 !important;
@@ -1120,12 +1103,11 @@ body {
   margin-top: 20px;
 }
 
-/* Responsive Design */
 @media (max-width: 1200px) {
   .footer-section {
     gap: 30px;
   }
-  
+
   .footer-item {
     min-width: 200px;
     max-width: 280px;
@@ -1138,7 +1120,7 @@ body {
     gap: 30px;
     justify-content: flex-start;
   }
-  
+
   .footer-item {
     flex: 1 1 calc(50% - 15px);
     min-width: 200px;
@@ -1150,35 +1132,35 @@ body {
   .footer {
     padding: 40px 0 20px 0;
   }
-  
+
   .footer-container {
     padding: 0 20px;
   }
-  
+
   .footer-section {
     flex-direction: column;
     gap: 30px;
     justify-content: flex-start;
   }
-  
+
   .footer-item {
     flex: none;
     max-width: none;
     min-width: auto;
   }
-  
+
   .footer-phone {
     font-size: 16px;
   }
-  
+
   .footer-social .footer-links {
     gap: 10px;
   }
-  
+
   .footer-payment-list {
     gap: 8px;
   }
-  
+
   .footer-payment-image {
     width: 40px;
     height: 24px;
@@ -1189,16 +1171,16 @@ body {
   .footer-container {
     padding: 0 10px;
   }
-  
+
   .footer-section {
     gap: 25px;
   }
-  
+
   .footer-title {
     font-size: 15px;
     margin-bottom: 15px;
   }
-  
+
   .footer-link {
     font-size: 13px;
   }

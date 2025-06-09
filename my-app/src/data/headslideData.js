@@ -1,27 +1,27 @@
 const headslideData = [
   {
     id: 1,
-    image: "/hofman.jpg", // ✅ düzgün yol
+    image: "/hofman.jpg",
     title: "Hofman",
   },
   {
     id: 6,
-    image: "/hofman.jpg", // ✅ düzgün yol
+    image: "/hofman.jpg",
     title: "Hofman",
   },
   {
     id: 7,
-    image: "/hofman.jpg", // ✅ düzgün yol
+    image: "/hofman.jpg",
     title: "Hofman",
   },
   {
     id: 8,
-    image: "/hofman.jpg", // ✅ düzgün yol
+    image: "/hofman.jpg",
     title: "Hofman",
   },
   {
     id: 9,
-    image: "/hofman.jpg", // ✅ düzgün yol
+    image: "/hofman.jpg",
     title: "Hofman",
   },
   {

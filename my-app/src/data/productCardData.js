@@ -1,5 +1,4 @@
 const electronics = [
-  // Telefonlar - 8 ədəd
   {
     id: 1,
     name: "iPhone 15 Pro Max 256GB Təbii Titan",
@@ -9,18 +8,18 @@ const electronics = [
     discount: "-9%",
     installment: "0% 12 ay",
     stock: "2 sat / 0Qh",
-    image: "/iphone15.webp"
+    image: "/iphone15.webp",
   },
   {
     id: 2,
     name: "Samsung Galaxy S24 Ultra 256GB Qara",
-    category: "telefon", 
+    category: "telefon",
     originalPrice: "3799₼",
     discountPrice: "3299₼",
     discount: "-13%",
     installment: "0% 6 ay",
     stock: "2 sat / 0Qh",
-    image: "/samsunga56.webp"
+    image: "/samsunga56.webp",
   },
   {
     id: 3,
@@ -31,7 +30,7 @@ const electronics = [
     discount: "-15%",
     installment: "0% 6 ay",
     stock: "2 sat / 0Qh",
-    image: "/xiominote13.webp"
+    image: "/xiominote13.webp",
   },
   {
     id: 4,
@@ -42,7 +41,7 @@ const electronics = [
     discount: "-14%",
     installment: "0% 12 ay",
     stock: "2 sat / 0Qh",
-    image: "/iphone14.webp"
+    image: "/iphone14.webp",
   },
   {
     id: 5,
@@ -53,7 +52,7 @@ const electronics = [
     discount: "-13%",
     installment: "0% 9 ay",
     stock: "2 sat / 0Qh",
-    image: "/samsung36.webp"
+    image: "/samsung36.webp",
   },
   {
     id: 6,
@@ -64,7 +63,7 @@ const electronics = [
     discount: "-16%",
     installment: "0% 9 ay",
     stock: "2 sat / 0Qh",
-    image: "/samsunga16.webp"
+    image: "/samsunga16.webp",
   },
   {
     id: 7,
@@ -75,7 +74,7 @@ const electronics = [
     discount: "-15%",
     installment: "0% 12 ay",
     stock: "2 sat / 0Qh",
-    image: "/xiominote13.webp"
+    image: "/xiominote13.webp",
   },
   {
     id: 8,
@@ -86,31 +85,30 @@ const electronics = [
     discount: "-15%",
     installment: "0% 12 ay",
     stock: "2 sat / 0Qh",
-    image: "/iphone15.webp"
+    image: "/iphone15.webp",
   },
 
-  // Bilgisayarlar - 8 ədəd
   {
     id: 9,
     name: "MacBook Pro 14 M3 Pro 512GB Gümüşü",
     category: "bilgisayar",
-    originalPrice: "6899₼", 
+    originalPrice: "6899₼",
     discountPrice: "6299₼",
     discount: "-9%",
     installment: "0% 18 ay",
     stock: "2 sat / 0Qh",
-    image: "/samsuna36.webp"
+    image: "/samsuna36.webp",
   },
   {
     id: 10,
     name: "HP Pavilion Gaming 15 RTX 4060",
     category: "bilgisayar",
     originalPrice: "2899₼",
-    discountPrice: "2499₼", 
+    discountPrice: "2499₼",
     discount: "-14%",
     installment: "0% 12 ay",
     stock: "2 sat / 0Qh",
-    image: "/iphone14.webp"
+    image: "/iphone14.webp",
   },
   {
     id: 11,
@@ -121,7 +119,7 @@ const electronics = [
     discount: "-13%",
     installment: "0% 15 ay",
     stock: "2 sat / 0Qh",
-    image: "/samsunga56.webp"
+    image: "/samsunga56.webp",
   },
   {
     id: 12,
@@ -130,20 +128,20 @@ const electronics = [
     originalPrice: "4299₼",
     discountPrice: "3799₼",
     discount: "-12%",
-    installment: "0% 18 ay", 
+    installment: "0% 18 ay",
     stock: "2 sat / 0Qh",
-    image: "/xiominote13.webp"
+    image: "/xiominote13.webp",
   },
   {
     id: 13,
     name: "Lenovo ThinkPad E15 i5 256GB SSD",
-    category: "bilgisayar", 
+    category: "bilgisayar",
     originalPrice: "1899₼",
     discountPrice: "1599₼",
     discount: "-16%",
     installment: "0% 12 ay",
     stock: "2 sat / 0Qh",
-    image: "/iphone15.webp"
+    image: "/iphone15.webp",
   },
   {
     id: 14,
@@ -154,7 +152,7 @@ const electronics = [
     discount: "-15%",
     installment: "0% 12 ay",
     stock: "2 sat / 0Qh",
-    image: "/samsunga16.webp"
+    image: "/samsunga16.webp",
   },
   {
     id: 15,
@@ -165,7 +163,7 @@ const electronics = [
     discount: "-15%",
     installment: "0% 12 ay",
     stock: "2 sat / 0Qh",
-    image: "/samsung36.webp"
+    image: "/samsung36.webp",
   },
   {
     id: 16,
@@ -176,10 +174,9 @@ const electronics = [
     discount: "-14%",
     installment: "0% 15 ay",
     stock: "2 sat / 0Qh",
-    image: "/iphone14.webp"
+    image: "/iphone14.webp",
   },
 
-  // Qulaqlıqlar - 8 ədəd
   {
     id: 17,
     name: "AirPods Pro 2nd Gen USB-C",
@@ -187,9 +184,9 @@ const electronics = [
     originalPrice: "749₼",
     discountPrice: "649₼",
     discount: "-13%",
-    installment: "0% 6 ay", 
+    installment: "0% 6 ay",
     stock: "2 sat / 0Qh",
-    image: "/samsunga56.webp"
+    image: "/samsunga56.webp",
   },
   {
     id: 18,
@@ -200,18 +197,18 @@ const electronics = [
     discount: "-16%",
     installment: "0% 6 ay",
     stock: "2 sat / 0Qh",
-    image: "/xiominote13.webp"
+    image: "/xiominote13.webp",
   },
   {
     id: 19,
     name: "JBL Tune 770NC Simsiz Qulaqlıq",
     category: "qulaqlıq",
     originalPrice: "299₼",
-    discountPrice: "249₼", 
+    discountPrice: "249₼",
     discount: "-17%",
     installment: "0% 3 ay",
     stock: "2 sat / 0Qh",
-    image: "/iphone15.webp"
+    image: "/iphone15.webp",
   },
   {
     id: 20,
@@ -222,7 +219,7 @@ const electronics = [
     discount: "-17%",
     installment: "0% 6 ay",
     stock: "2 sat / 0Qh",
-    image: "/samsung36.webp"
+    image: "/samsung36.webp",
   },
   {
     id: 21,
@@ -233,7 +230,7 @@ const electronics = [
     discount: "-18%",
     installment: "0% 3 ay",
     stock: "2 sat / 0Qh",
-    image: "/samsunga16.webp"
+    image: "/samsunga16.webp",
   },
   {
     id: 22,
@@ -244,7 +241,7 @@ const electronics = [
     discount: "-16%",
     installment: "0% 6 ay",
     stock: "2 sat / 0Qh",
-    image: "/iphone14.webp"
+    image: "/iphone14.webp",
   },
   {
     id: 23,
@@ -255,7 +252,7 @@ const electronics = [
     discount: "-15%",
     installment: "0% 6 ay",
     stock: "2 sat / 0Qh",
-    image: "/samsunga56.webp"
+    image: "/samsunga56.webp",
   },
   {
     id: 24,
@@ -266,20 +263,19 @@ const electronics = [
     discount: "-15%",
     installment: "0% 6 ay",
     stock: "2 sat / 0Qh",
-    image: "/xiominote13.webp"
+    image: "/xiominote13.webp",
   },
 
-  // Ağıllı saatlar - 8 ədəd
   {
     id: 25,
     name: "Apple Watch Series 9 45mm GPS",
-    category: "ağıllı saat", 
+    category: "ağıllı saat",
     originalPrice: "1299₼",
     discountPrice: "1149₼",
     discount: "-12%",
     installment: "0% 9 ay",
     stock: "2 sat / 0Qh",
-    image: "/iphone15.webp"
+    image: "/iphone15.webp",
   },
   {
     id: 26,
@@ -287,10 +283,10 @@ const electronics = [
     category: "ağıllı saat",
     originalPrice: "899₼",
     discountPrice: "769₼",
-    discount: "-14%", 
+    discount: "-14%",
     installment: "0% 6 ay",
     stock: "2 sat / 0Qh",
-    image: "/samsung36.webp"
+    image: "/samsung36.webp",
   },
   {
     id: 27,
@@ -301,7 +297,7 @@ const electronics = [
     discount: "-15%",
     installment: "0% 6 ay",
     stock: "2 sat / 0Qh",
-    image: "/samsunga16.webp"
+    image: "/samsunga16.webp",
   },
   {
     id: 28,
@@ -312,7 +308,7 @@ const electronics = [
     discount: "-15%",
     installment: "0% 9 ay",
     stock: "2 sat / 0Qh",
-    image: "/iphone14.webp"
+    image: "/iphone14.webp",
   },
   {
     id: 29,
@@ -323,7 +319,7 @@ const electronics = [
     discount: "-18%",
     installment: "0% 6 ay",
     stock: "2 sat / 0Qh",
-    image: "/samsunga56.webp"
+    image: "/samsunga56.webp",
   },
   {
     id: 30,
@@ -334,7 +330,7 @@ const electronics = [
     discount: "-15%",
     installment: "0% 6 ay",
     stock: "2 sat / 0Qh",
-    image: "/xiominote13.webp"
+    image: "/xiominote13.webp",
   },
   {
     id: 31,
@@ -345,7 +341,7 @@ const electronics = [
     discount: "-17%",
     installment: "0% 6 ay",
     stock: "2 sat / 0Qh",
-    image: "/iphone15.webp"
+    image: "/iphone15.webp",
   },
   {
     id: 32,
@@ -356,9 +352,8 @@ const electronics = [
     discount: "-16%",
     installment: "0% 6 ay",
     stock: "2 sat / 0Qh",
-    image: "/samsung36.webp"
-  }
+    image: "/samsung36.webp",
+  },
 ];
-
 
 export default electronics;
