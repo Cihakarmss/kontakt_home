@@ -2,7 +2,7 @@ import Sidebar from "@/components/Sidebar";
 import HeaderSlider from "@/components/HeaderSlider";
 import Weeksell from "@/components/Weeksell";
 import FeaturesCards from "@/components/FeaturesCards";
-import "./globals.css";
+
 
 import { ProductProvider } from "@/hooks/ProductContext";
 import ProductCards from "@/components/ProductCards";

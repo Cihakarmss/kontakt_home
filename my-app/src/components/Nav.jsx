@@ -20,23 +20,23 @@ function Nav() {
 
           <ul>
             <li>
-              <a href="/Trade-in">Trade-in</a>
+              <Link href="/Trade-in">Trade-in</Link>
             </li>
 
             <li>
-              <a href="/magazalar">Mağazalar</a>
+              <Link href="/magazalar">Mağazalar</Link>
             </li>
             <li>
-              <a href="/korporativ">Korporativ satışlar</a>
+              <Link href="/korporativ">Korporativ satışlar</Link>
             </li>
             <li>
               <span>*</span>
-              <a href="tel:6060">6060</a>
+              <Link href="tel:6060">6060</Link>
             </li>
           </ul>
           <div className="right-nav">
             <div className="profInfo_buttons">
-              <button className="ayliq">Aylıq Ödəniş</button>
+              <Link href="/ayliq" className="ayliq">Aylıq Ödəniş</Link>
               <button className="register">Daxil ol</button>
             </div>
 
