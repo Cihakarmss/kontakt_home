@@ -1185,3 +1185,34 @@ body {
     font-size: 13px;
   }
 }
+.stores-container {
+  max-width: 1200px;
+  margin: 15 0 0;
+  padding: 20px;
+}
+.stores-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+/* col-4  */
+.store-item {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  min-width: calc(25% - 20px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+.hours-label {
+  font-size: 14px;
+  color: green;
+  margin-bottom: 10px;
+}

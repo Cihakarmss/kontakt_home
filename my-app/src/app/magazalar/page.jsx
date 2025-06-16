@@ -1,13 +1,10 @@
-import FilterStores from '@/components/StoreList'
-import React from 'react'
+import FilterStores from "@/components/FilterStores";
 
-function page() {
+export default function MagazalarPage() {
   return (
-    <div>
-        <FilterStores />
-      
+    <div className="stores-container">
+      <h1>Mağazalarımız</h1>
+      <FilterStores />
     </div>
-  )
+  );
 }
-
-export default page

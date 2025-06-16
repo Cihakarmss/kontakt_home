@@ -1,3 +1,4 @@
+'use client';
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -20,7 +21,7 @@ function Nav() {
 
           <ul>
             <li>
-              <Link href="/Trade-in">Trade-in</Link>
+              <Link href="/trade-in">Trade-in</Link>
             </li>
 
             <li>
