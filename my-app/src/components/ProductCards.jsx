@@ -5,10 +5,13 @@ import Filterbtn from "./Filterbtn";
 import { useProduct } from "@/hooks/ProductContext";
 
 import Image from "next/image";
+import { useRouter } from "next/navigation";
+import AddtoBox from "./AddtoBox";
 
 function ProductCards({title}) {
 
   const { filteredProducts } = useProduct();
+  const router = useRouter();
   
   return (
     <div>
@@ -22,7 +25,7 @@ function ProductCards({title}) {
           <div className="card-satisliderleri-content">
             {filteredProducts &&
               filteredProducts.map((product) => (
-                <div key={product.id} className="card-satisliderleri-item">
+                <div key={product.id} onClick={()=>router.push(`/details/${product.id}`)} className="card-satisliderleri-item">
                   <Image
                     src={product.image || "/placeholder.svg"}
                     alt="sekil"
@@ -33,7 +36,7 @@ function ProductCards({title}) {
                   <h3 className="product-title">{product.name}</h3>
                   <p className="product-price">{product.originalPrice}</p>
                   <div className="buttons">
-                    <button className="add-to-cart">Səbətə əlavə et</button>
+                    <AddtoBox product={product} />
                   </div>
                 </div>
               ))}

@@ -5,6 +5,8 @@ import "swiper/css/autoplay";
 import weeklycardData from "@/data/weeklycardData";
 import Image from "next/image";
 import { Autoplay } from "swiper/modules";
+import AddtoBox from "./AddtoBox";
+import { useRouter } from "next/navigation";
 
 function WeeklyCards() {
   return (
@@ -27,7 +29,7 @@ function WeeklyCards() {
                   height={200}
                   className="weekly-card-image"
                 />
-                <button>Sebete at </button>
+                <AddtoBox />
               </div>
             </SwiperSlide>
           ))}
