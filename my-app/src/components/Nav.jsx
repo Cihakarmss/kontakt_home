@@ -30,12 +30,12 @@ function Nav() {
             <li>
               <Link href="/korporativ">Korporativ satışlar</Link>
             </li>
-            <li>
+          </ul>
+          <div className="right-nav">
+            <li className="phone_number">
               <span>*</span>
               <Link href="tel:6060">6060</Link>
             </li>
-          </ul>
-          <div className="right-nav">
             <div className="profInfo_buttons">
               <Link href="/ayliq" className="ayliq">Aylıq Ödəniş</Link>
               <button className="register">Daxil ol</button>
