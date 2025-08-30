@@ -34,7 +34,7 @@ function ProductCards({title}) {
                     className="product-image"
                   />
                   <h3 className="product-title">{product.name}</h3>
-                  <p className="product-price">{product.originalPrice}</p>
+                  <p className="product-price">{product.originalPrice}₼</p>
                   <div className="buttons">
                     <AddtoBox product={product} />
                   </div>

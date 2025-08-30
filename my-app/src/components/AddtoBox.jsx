@@ -1,19 +1,19 @@
-"use client"
+"use client";
+import { useCart } from "@/hooks/CartContext";
+import React from "react";
 
-import React, { use, useState } from "react";
+function AddtoBox({ product }) {
+  const { addToCart } = useCart();
 
-
-function AddtoBox({product}) {
-  const [cart, setCart] = useState([]); // Sepet state
-  const addToCart = () => {
-    setCart([...cart, product]);
-    alert(`${product.name} sepete eklendi!`);
+  const handleAdd = () => {
+    addToCart(product);
+    alert(`${product.name} sebete əlavə edildi!`);
   };
 
-
-
   return (
-    <button className="btn-add-cart"onClick={addToCart} >Sebete at </button>
+    <button onClick={handleAdd} className="add-to-cart">
+      🛒 Sepete At
+    </button>
   );
 }
 

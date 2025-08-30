@@ -6,7 +6,6 @@ import weeklycardData from "@/data/weeklycardData";
 import Image from "next/image";
 import { Autoplay } from "swiper/modules";
 import AddtoBox from "./AddtoBox";
-import { useRouter } from "next/navigation";
 
 function WeeklyCards() {
   return (
@@ -24,12 +23,12 @@ function WeeklyCards() {
               <div className="weekly-card">
                 <Image
                   src={card.image || "/placeholder.svg"}
-                  alt={card.title}
+                  alt={card.title || "Weekly card image"}
                   width={267}
                   height={200}
                   className="weekly-card-image"
                 />
-                <AddtoBox />
+                
               </div>
             </SwiperSlide>
           ))}

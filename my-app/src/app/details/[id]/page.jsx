@@ -16,7 +16,7 @@ export default function DetailsPage() {
   return (
     <div className="product-container">
       <div className="product-layout">
-        {/* Image Section */}
+       
         <div className="product-images">
           <img 
             src={product.image} 
@@ -30,7 +30,7 @@ export default function DetailsPage() {
           </div>
         </div>
 
-        {/* Product Info Section */}
+        
         <div className="product-info">
           <div className="product-brand">Apple səhifəsinə keç</div>
           
@@ -44,7 +44,7 @@ export default function DetailsPage() {
             <div className="product-code">Məhsul mövuddadır TM-DG-SBP-110S-SM-2933</div>
           </div>
 
-          {/* Color Selection */}
+          
           <div className="color-section">
             <h3>Rəng seçimi:</h3>
             <div className="color-options">
@@ -69,7 +69,7 @@ export default function DetailsPage() {
 
           
 
-          {/* Price Section */}
+          
           <div className="price-section">
             <div className="discount-badge">-400₼</div>
             <div>
@@ -78,7 +78,7 @@ export default function DetailsPage() {
             </div>
           </div>
 
-          {/* Action Buttons */}
+         
           <div className="action-buttons">
             <AddtoBox product={product} />
             <button className="btn-one-click">
@@ -88,13 +88,13 @@ export default function DetailsPage() {
             <button className="btn-compare">⚖</button>
           </div>
 
-          {/* Trade-in Section */}
+          
           <div className="trade-in-section">
             <div className="trade-in-badge">Trade-in Yeni</div>
             <p>Cihazını Trade-in ilə dəyişərək şəraitli şərtlər əldə et</p>
           </div>
 
-          {/* Product Details */}
+          
           <div className="product-details">
             <h3>Həssəl alış kalkulyatoru</h3>
             <div className="detail-item">
@@ -115,7 +115,7 @@ export default function DetailsPage() {
             </div>
           </div>
 
-          {/* Installment Calculator */}
+          
           <div className="installment-section">
             <h3>Taksit kalkulyatoru</h3>
             <div className="installment-options">
@@ -138,7 +138,7 @@ export default function DetailsPage() {
         </div>
       </div>
       
-      {/* Chat Support */}
+     
       <div className="chat-support">
         Canlı dəstək xidməti
       </div>
