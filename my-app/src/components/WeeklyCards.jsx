@@ -28,7 +28,7 @@ function WeeklyCards() {
                   height={200}
                   className="weekly-card-image"
                 />
-                
+                <AddtoBox product={card} />
               </div>
             </SwiperSlide>
           ))}

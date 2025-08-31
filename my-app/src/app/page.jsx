@@ -6,20 +6,13 @@ import FeaturesCards from "@/components/FeaturesCards";
 
 import { ProductProvider } from "@/hooks/ProductContext";
 import ProductCards from "@/components/ProductCards";
+import HeroSection from "@/components/HeroSection";
 
 export default function Home() {
   return (
     <ProductProvider>
       <div className="container ">
-        <div className="hero-section">
-          <div className="sidebar-container">
-            <Sidebar />
-          </div>
-          <div className="main-content">
-            <HeaderSlider />
-            <Weeksell />
-          </div>
-        </div>
+        <HeroSection />
         <div className="features-section">
           <FeaturesCards />
           <div />
