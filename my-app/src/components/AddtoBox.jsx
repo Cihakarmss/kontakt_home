@@ -1,5 +1,6 @@
 "use client";
 import { useCart } from "@/hooks/CartContext";
+import Image from "next/image";
 import React from "react";
 
 function AddtoBox({ product }) {
@@ -12,7 +13,13 @@ function AddtoBox({ product }) {
 
   return (
     <button onClick={handleAdd} className="add-to-cart">
-      🛒 Sepete At
+      <Image
+        src="/addto.svg"
+        alt="Cart Icon"
+        width={16}
+        height={16}
+        className="cart-icon"
+      /> Səbətə at
     </button>
   );
 }

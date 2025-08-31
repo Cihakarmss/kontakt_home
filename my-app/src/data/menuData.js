@@ -3,7 +3,7 @@ const menuData = {
     {
       id: 1,
       name: 'Kondisionerlər',
-      icon: '🏠',
+      icon: '/kondisaner.svg',
       href: '/kondisionerler',
       submenu: {
         Brend: ['AUX', 'Bosch', 'LG', 'Samsung', 'Midea', 'Daikin', 'Electrolux', 'Gree', 'Hitachi', 'Toshiba', 'Panasonic', 'Sharp', 'Vestel', 'Arçelik', 'Beko', 'Vestel', 'Electrolux', 'Ariston', 'Indesit'],
@@ -14,7 +14,7 @@ const menuData = {
     {
       id: 2,
       name: 'Smartfonlar və aksesuarları',
-      icon: '📱',
+      icon: '/phone_icon.svg',
       href: '/smartfonlar',
       submenu: {
         Marka: ['iPhone', 'Samsung', 'Xiaomi'],
@@ -25,7 +25,7 @@ const menuData = {
     {
       id: 3,
       name: 'Smart qadjetlər',
-      icon: '⌚',
+      icon: '/clock-con.svg',
       href: '/smart-qadjetler',
       submenu: {
         Qadjetlər: ['Smart saat', 'Fitness tracker'],
@@ -36,7 +36,7 @@ const menuData = {
     {
       id: 4,
       name: 'Notbuklar, PK, planşetlər',
-      icon: '💻',
+      icon: '/notebook_icon.svg',
       href: '/notbuklar',
       submenu: {
         Brend: ['HP', 'ASUS', 'Apple'],
@@ -47,7 +47,7 @@ const menuData = {
     {
       id: 5,
       name: 'Geyimlər üçün məhsullar',
-      icon: '👕',
+      icon: '/phan_icon.svg',
       href: '/geyimler',
       submenu: {
         Məhsullar: ['Ütü', 'Buxarlı ütü', 'Dikiş maşını'],
@@ -58,7 +58,7 @@ const menuData = {
     {
       id: 6,
       name: 'TV, audio və foto',
-      icon: '📺',
+      icon: '/tv.icon.svg',
       href: '/tv-audio',
       submenu: {
         TV: ['Samsung', 'LG', 'Xiaomi'],
@@ -69,7 +69,7 @@ const menuData = {
     {
       id: 7,
       name: 'Mətbəx texnikası',
-      icon: '🍳',
+      icon: '/plate_icon.svg',
       href: '/metbex',
       submenu: {
         Texnika: ['Blender', 'Qəhvə maşını', 'Sobada bişirici'],
@@ -80,7 +80,7 @@ const menuData = {
     {
       id: 8,
       name: 'Ev texnikası',
-      icon: '🏡',
+      icon: '/icon_home.svg',
       href: '/ev-texnikasi',
       submenu: {
         Məhsullar: ['Tozsoran', 'İstilik sistemi'],
@@ -91,7 +91,7 @@ const menuData = {
     {
       id: 9,
       name: 'Qab-qacaq',
-      icon: '🍽️',
+      icon: '/plate_icon.svg',
       href: '/qab-qacaq',
       submenu: {
         Dəstlər: ['Yemək dəsti', 'Çay dəsti', 'Tava'],
@@ -102,7 +102,7 @@ const menuData = {
     {
       id: 10,
       name: 'Gözəllik və sağlamlıq',
-      icon: '💄',
+      icon: 'phan_icon.svg',
       href: '/gozellik',
       submenu: {
         Gözəllik: ['Fen', 'Saç düzləndirici'],
@@ -113,7 +113,7 @@ const menuData = {
     {
       id: 11,
       name: 'İdman və əyləncə',
-      icon: '⚽',
+      icon: 'clock-con.svg',
       href: '/idman',
       submenu: {
         Kateqoriya: ['Velosiped', 'Trainer', 'Scooter'],
@@ -124,7 +124,7 @@ const menuData = {
     {
       id: 12,
       name: 'Təmir tikinti',
-      icon: '🔨',
+      icon: 'phone_icon.svg',
       href: '/temir',
       submenu: {
         Alətlər: ['Matkap', 'Drel', 'Şlifovka'],

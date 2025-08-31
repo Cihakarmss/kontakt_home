@@ -3,6 +3,8 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import menuData from "@/data/menuData";
+import Image from "next/image";
+
 
 export default function Sidebar() {
   const [hoveredCategory, setHoveredCategory] = useState(null);
@@ -19,7 +21,14 @@ export default function Sidebar() {
               onMouseLeave={() => setHoveredCategory(null)}
             >
               <Link href={category.href} className="nav-link">
-                <span className="nav-icon">{category.icon}</span>
+                <span className="nav-icon"><Image
+                    src={category.icon}
+                    alt={category.name}
+                    width={20}
+                    height={20}
+
+                />
+                  </span>
                 <span className="nav-text">{category.name}</span>
               </Link>
 
